@@ -1,0 +1,7 @@
+f = open('DbFile.txt', 'r').read().split(',')
+f1 = set(f)
+f2 = open('ListOfCondidates.txt', 'r').read().split(',')
+f3 = set(f2)
+List = f3.difference (f1)
+List1 = list(List)
+print(List1)
